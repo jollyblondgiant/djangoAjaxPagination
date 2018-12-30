@@ -1,0 +1,15 @@
+#success{
+    color: red
+}
+#pages{
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 240px;
+    margin-top: 20px;
+}
+.col-sm{
+    text-align: center;
+}
+td{
+    height: 49px;
+}

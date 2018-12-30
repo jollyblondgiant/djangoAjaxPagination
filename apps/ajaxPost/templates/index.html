@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Djang-Ajax Pagination</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/post.js' %}"></script>
+
+</head>
+
+<body>
+        <div id="posts">
+  
+        </div>
+        <form id="postForm" method="POST" action="post/newQuote">
+        {% csrf_token %}
+        Write a new note!
+        </br><input name="message" id="message">
+        </br><input id="submit" type="submit" value="Post It!">
+
+    </form>
+    <div id="display">
+        
+    </div>
+
+
+</body>
+
+</html>
